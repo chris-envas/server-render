@@ -18,6 +18,7 @@ module.exports = merge(base, {
       files: {
         js: 'client.bundle.js'
       },
+      title: '服务端渲染',
       excludeChunks: ['server']
     })
   ]

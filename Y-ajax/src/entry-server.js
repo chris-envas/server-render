@@ -6,7 +6,7 @@ export default context => {
 
     let components = App.components;
     let asyncDataPromiseFns = [];
-  
+    console.log(components)
     Object.values(components).forEach(component => {
       if (component.asyncData) {
         asyncDataPromiseFns.push(component.asyncData({ store }));
